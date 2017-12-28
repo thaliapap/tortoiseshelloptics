@@ -1,0 +1,291 @@
+html{
+  font-size:18px;
+  font-family: Helvetica;
+  background-color: white;
+  color:white;
+  line-height: 1.4;
+
+}
+
+
+header{
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 1rem;
+  height:30rem;
+}
+.container{
+  display:flex;
+  max-width:960px;
+  margin: 0 auto;
+}
+
+.container img {
+  height:1.5rem;
+  padding-left: 2rem;
+  padding-right:1rem;
+}
+
+.container p{
+  display:inline-flex;
+}
+
+nav {
+  background-color:cadetblue;
+  align-items: center;
+  justify-content: space-between;
+  padding:1rem 0;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+ul{
+  margin-right: 1rem;
+}
+
+li{
+  display:inline-flex;
+  padding: 0 1rem;
+}
+.small-menu{
+  display: none;
+}
+@media only screen and (max-width:1024px){
+  nav div{
+  max-width:1024px;
+  }
+  header{
+    height:22rem;
+    padding-top: 0;
+
+    }
+    .container {
+      max-width:none;
+    }
+}
+@media only screen and (max-width:700px){
+  .small-menu{
+    display:flex;
+    }
+    ul{
+      display:none;
+    }
+}
+
+@media only screen and (max-width:560px){
+  .small-menu{
+    display:flex;
+    }
+    ul{
+      display:none;
+    }
+    nav.container p{
+      display:none;
+    }
+    header{
+      height:17rem;
+      padding-top: 0;
+      background-position: 20%;
+      margin-bottom: 3.77rem;
+    }
+
+}
+/*Main Section*/
+
+.pullquote{
+  display:inline-flex;
+  background-color: white;
+  color:black;
+  padding:1.5rem 5rem;
+  margin-top:10rem;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height:1.2;
+  margin-right: -2rem;
+  }
+
+header .flex{
+  justify-content: flex-end;
+}
+
+.flex{
+  display:flex;
+}
+@media only screen and (max-width:1024px){
+  .pullquote{
+    padding:.75rem 4rem;
+    margin-top:5rem;
+    margin-right: 2rem;
+    font-size: 1.33rem;
+    max-width: 960px;
+    }
+}
+
+@media only screen and (max-width:560px){
+  .pullquote{
+    padding: 1rem auto;
+    width:100%;
+    margin:9rem auto;
+    font-size: 1rem;
+    justify-content: center;
+    }
+
+}
+/*Info section*/
+
+.icon-content{
+display:flex;
+margin: 3rem;
+text-align: center;
+width:5rem;
+height:8rem;
+justify-content: space-between;
+align-items:center;
+flex-direction: column;
+line-height: 1.4;
+}
+
+.icon{
+  display:flex;
+  margin: 3rem;
+  text-align: center;
+  width:5rem;
+  height:8rem;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  line-height: 1.4;
+}
+
+
+.icon img{
+  margin-bottom: 1rem;
+  width:5rem;
+
+}
+.icon-content img.paper-icon {
+  width:3.5rem;
+  margin-bottom:1rem;
+}
+
+.icon-content p{
+  color:black;
+  text-align: center;
+  width:8rem;
+}
+
+.icon p{
+  color:black;
+  text-align: center;
+  width:5rem;
+}
+
+.supporting {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width:560px){
+    .icon{
+      margin:auto;
+      justify-content: center;
+
+    }
+    .icon-content{
+      margin: auto;
+      justify-content: center;
+    }
+
+    .icon p{
+    font-size: .77rem;
+
+
+    }
+
+    .icon-content p{
+    font-size: .77rem;
+    width:5rem;
+
+    }
+    .supporting {
+      flex-direction: column;
+       
+    }
+  }
+
+
+/*Support section*/
+.title{
+  color:white;
+  font-weight:bold;
+  background-color:cadetblue;
+  padding:.5rem 1.25rem;
+  max-width:10rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.supporting .support{
+  width:35%;
+  color:black;
+  margin-right: 5%;
+  line-height: 1.4;
+  margin-bottom: 5rem;
+}
+
+@media only screen and (max-width:560px){
+.title{
+  width:100%;
+  max-width: none;
+  text-align: center;
+}
+
+.supporting .support{
+  width:auto;
+  margin-bottom: 3rem;
+
+
+}
+.container p{
+  width:auto;
+  font-size: .77rem;
+  color:black;
+  margin:0 auto;
+  padding:0 1rem;;
+}
+}
+
+
+
+/* Footer */
+footer {
+  display:flex;
+  padding: 4rem 2rem;
+  background-color: azure;
+  color:black;
+  margin-top: 5rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+.logo-black{
+  height:1.5rem;
+
+}
+
+@media only screen and (max-width:560px){
+
+footer{
+  justify-content: center;
+  padding:2rem;
+}
+footer div{
+  display:none;
+}
+}
